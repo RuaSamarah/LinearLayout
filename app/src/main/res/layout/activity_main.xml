@@ -5,26 +5,35 @@
     android:orientation="vertical" >
 
     <Button android:id="@+id/btnStart"
-        android:layout_width="270dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="start"/>
+        android:text="start"
+        android:onClick="buttonOnClick"
+        android:background="#fc6262" />
 
     <Button android:id="@+id/btnPause"
-        android:layout_width="270dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="pause"/>
+        android:text="pause"
+        android:background="#fc6262"
+        android:onClick="buttonOnClick" />
 
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:paddingLeft="80dp"
-        android:paddingTop="80dp">
+        android:paddingTop="80dp"
+        android:id="@+id/relativeLayout"
+        android:background="#777777">
 
         <Button android:id="@+id/relativeButtonOne"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:text="B1"/>
+            android:text="B1"
+            android:background="#8b8888"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
 
     </RelativeLayout>
